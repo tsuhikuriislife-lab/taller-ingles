@@ -20,6 +20,8 @@ rewarding when you finally manage to reel the fish you wanted.
 
 ### Start
 
+#
+
 When you run the code, the first thing you see is a "welcoming" screen, telling
 
 you what the game is about and what you can get.
@@ -36,7 +38,9 @@ After that, it gets a little more interesting.
 
 #
 
-## Menu
+### Menu
+
+#
 
 Then, the menu shows up.
 
@@ -50,7 +54,9 @@ I stored the answer the user gave me inside the variable "menu" to be used in th
 
 #
 
-## Verifying choice
+### Verifying choice
+
+#
 
 Here, I used a few conditionals to determine what the code is going to do after the user makes their choice.
 
@@ -64,7 +70,9 @@ This is how it looks displayed in the terminal:
 
 #
 
-## Starting the game
+### Starting the game
+
+#
 
 First thing the code does is getting the lake the player wants to go.
 
@@ -95,7 +103,9 @@ And you only see this through the terminal:
 
 #
 
-## Main game
+### Main game
+
+#
 
 Here is where it gets very complicated, so im going to simplify it.
 
