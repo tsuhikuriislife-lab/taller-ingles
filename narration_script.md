@@ -6,7 +6,15 @@ This project was born from a practice I had while talking with my partner; becau
 
 Let's talk a little more in depth about the game's functionality. The game follows this simple path:
 
-Start: The game gives you a short explanation of what it can do. Then, the Menu asks you if you want to play or not. If not, the game closes. If you want to play, you then get to decide which lake to fish in. The loop starts and you can catch cool fish like the Golden fish and the Ponyo fish (based on Ponyo from Hayao Miyazaki's anime movies!). Every time you catch a fish, you can decide to go back and select another lake.
+The game gives you a short explanation of what it can do.
+
+Then, the Menu asks you if you want to play or not. If not, the game closes.
+
+If you want to play, you then get to decide which lake to fish in.
+
+The loop starts and you can catch cool fish like the Golden fish and the Ponyo fish (based on Ponyo from Hayao Miyazaki's anime movies!).
+
+Every time you catch a fish, you can decide to go back and select another lake.
 
 The game is very simple in terms of functionality, but it has a lot of potential and very cool ideas to be added!
 
