@@ -86,7 +86,7 @@ That's a lot of info!
 
 Let's make it simple.
 
-- First, we print just a simple message tho ask the player which lake they want to go.
+- First, we print just a simple message to ask the player which lake they want to go.
 - Then, we set the variable "count" to 1, that way when we display the list on the screen, it starts on 1 instead of 0.
 - After that, the loop starts. It makes so the loop works for every "lake" inside of "lakes".
 - Inside the loop, we print a list using the variable "count" and the "name" of the "lake".
