@@ -1,8 +1,8 @@
 # Fishing simulator!
 
-## About the proyect
+## About the project
 
-This proyect started as a practice of freecoding just from a simple
+This project started as a practice of free-coding just from a simple
 
 phrase my partner gave me.
 
