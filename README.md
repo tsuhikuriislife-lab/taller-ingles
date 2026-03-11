@@ -2,19 +2,13 @@
 
 ## About the project
 
-This project started as a practice of free-coding just from a simple
-
-phrase my partner gave me.
+This project started as a practice of free-coding just from a simple phrase my partner gave me.
 
 ### "Make a realistic game"
 
-even tho "being realistic" has a wide meaning, I decided to go for the
+even tho "being realistic" has a wide meaning, I decided to go for the thing that really puts real life into something; time.
 
-thing that really puts real life into something; time.
-
-Fishing is a very time consuming thing in real life, but it feels very
-
-rewarding when you finally manage to reel the fish you wanted.
+Fishing is a very time consuming thing in real life, but it feels very rewarding when you finally manage to reel the fish you wanted.
 
 ## How the code works behing the scenes
 
