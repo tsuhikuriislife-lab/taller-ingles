@@ -36,7 +36,7 @@ This is how it looks displayed in the terminal:
 
 After that, it gets a little more interesting.
 
-#
+
 
 ### Menu
 
@@ -52,7 +52,7 @@ I used "int()" to convert the answer the user gave to an Integer, meaning they c
 
 I stored the answer the user gave me inside the variable "menu" to be used in the next part.
 
-#
+
 
 ### Verifying choice
 
@@ -68,7 +68,7 @@ This is how it looks displayed in the terminal:
 
 <img width="232" height="71" alt="imagen_2026-03-10_190821674" src="https://github.com/user-attachments/assets/e40849fb-2b74-430c-b7b9-9bec296744be" />
 
-#
+
 
 ### Starting the game
 
@@ -101,7 +101,7 @@ And you only see this through the terminal:
 
 <img width="310" height="86" alt="imagen_2026-03-10_190927074" src="https://github.com/user-attachments/assets/f14c36ad-f50c-4953-a18e-e738e27ed4c9" />
 
-#
+
 
 ### Main game
 
