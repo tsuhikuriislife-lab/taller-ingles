@@ -1,89 +1,61 @@
-# Un juego realista.
+#Exercise script for english training.
+
+#Random guessing number.
 import random
+print("="*50)
+print("Welcome to number guesser!")
+print("="*50)
+print("In this game, you need to guess a number between a range you select.")
+print("="*50)
+print("Let's start!")
+print("="*50)
 
-lagos = [
-    {
-        "nombre": "El Lago de los Amantes",
-        "peces": {
-            "peces comunes": ["Payaso", "Globo", "Mariposa", "Koi"],
-            "peces raros": ["Dorado", "Plateado", "Arcoiris", "Angel"],
-            "peces extra raros": ["Ponyo", "Marido", "Esposa",]
-        }
-    },
-    {
-        "nombre": "Lago Morita",
-        "peces": {
-            "peces comunes": ["Payaso", "Caballito de Mar", "Disco", "Angel" ],
-            "peces raros": ["Tilapia" ],
-            "peces extra raros": []
-        }
-    },
-    {
-        "nombre": "Lago de los Copitos",
-        "peces": {
+exit_menu = 0
+while exit_menu == 0:
+    option = int(input("Please select an option:\n1.New game\n2.Exit\n--- "))
+    if option == 1:
 
-        }
-    }]
+        verify_num1 = 0
+        while verify_num1 == 0:
+            try:
+                num1 =int(input("\nPlease enter the start of the range: "))
+            except ValueError:
+                print("\nPlease enter a number...")
+            verify_num1 += 1
 
+        verify_num2 = 0
+        while verify_num2 == 0:
+            try:
+                num2 = int(input("\nPlease enter the end of the range: "))+1
+            except ValueError:
+                print("\nPlease enter a number...")
+            verify_num2 += 1
 
-print("*"*50)
-print("Bienvenido al juego realista.")
-print("*"*50)
-print("En este juego, podras pescar diferentes tipos de peces, en diferentes lagos.\nSi tienes suerte, puedes encontrar peces raros!!!")
-print()
-
-menu = int(input("Por favor selecciona una opcion:\n1.Iniciar el juego\n2.Salir\n+++ "))
-if menu == 1:
-    print("Por favor elige el lago que deseas visitar:")
-    count = 1
-    for lago in lagos:
-        print(f"---{count}. {lago['nombre']}")
-        count += 1
-    indice = int(input("+++ "))-1
-    lago_actual = lagos[indice]
-    print(f"Seleccionaste {lago_actual['nombre']}")
-    salir =0
-    while salir ==0:
-            opciones = input("Que quieres hacer?:\n1.Pescar\n2.Salir\n--- ")
-            if opciones == "1":
-                salir = 0
-                intentos = 0
-                while salir == 0:
-                    probabilidad = random.randint(1, 100)
-                    a = input(f"\nLanzando caña por {intentos} vez...")
-                    if probabilidad <= 30:
-                        a = input("\nEl anzuelo se rompio :(...")
-                        intentos += 1
-                    elif probabilidad <= 75:
-                        a = input("\nAlgo pico el anzuelo!")
-                        pesca = random.choice(lago_actual["peces"]["peces comunes"])
-                        peso = random.randint(5, 10)
-                        if peso > 9:
-                            a = input("\nEs pesado!")
-                        a = input(f"\nFelicidades, pescaste un Pez {pesca} de {peso} kilos!")
-                        intentos += 1
-                    elif probabilidad <= 95:
-                        a = input("\nAlgo raro pico el anzuelo!")
-                        pesca = random.choice(lago_actual["peces"]["peces raros"])
-                        peso = random.randint(20, 35)
-                        if peso > 30:
-                            a = input("\nEs pesado!")                    
-                        a = input(f"\nFelicidades, pescaste un Pez {pesca} de {peso} kilos!")
-                        intentos += 1                        
-                    else:
-                        a = input("\nAlgo extra raro pico el anzuelo!")                    
-                        pesca = random.choice(lago_actual["peces"]["peces extra raros"])
-                        peso = random.randint(30, 60)
-                        if peso > 50:
-                            a = input("\nEs pesado!")                    
-                        a = input(f"\nFelicidades, pescaste un Pez {pesca} de {peso} kilos!")
-                        intentos += 1                        
-                    opciones = input("\nQuieres salir? (N): ")
-                    if opciones == "N":
-                        print("\nHasta la proxima!")
-                        salir += 1
-            elif opciones == "2":
-                print("Gracias por jugar!")
-                salir += 1
+        difference = num2 - num1
+        print("\nRandomizing...")
+        randnum = random.randint(num1, num2)
+        tries = 1
+        exit_loop = 0
+        number_chosen = []
+        while exit_loop == 0:
+            answer = input("\nEnter your guess (press X to exit): ")
+            
+            if answer == "x":
+                exit_loop += 1
             else:
-                print("\nSelecciona una opcion correcta.")
+                answer = int(answer)
+                number_chosen.append(answer)
+                if answer == randnum:
+                    print("Congratulations, you are spot on!!!!")
+                    print(f"Guessed the number in {tries} attempt(s)")
+                    print(f"Chances were 1/{difference}!")
+                    exit_loop += 1
+                elif not answer == randnum:
+                    print("Wrong, please try again!")
+                    print(f"You have guessed these numbers: {number_chosen}")
+                    tries += 1
+    elif option == 2:
+        print("Goodbye!")
+        exit_menu += 1
+    else:
+        print("Please enter a valid option...")
