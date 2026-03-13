@@ -1,16 +1,13 @@
-# Fishing Simulator!
+# Random number guesser!
 
 ## About the Project
-This project started as a free-coding practice based on a simple prompt from my partner: 
-### "Make a realistic game."
 
-Even though "being realistic" is subjective, I decided to focus on the element that defines real life: **time**.
-Fishing is a very time-consuming activity, but it feels incredibly rewarding when you finally manage to reel in the fish you wanted.
+This script is a practice of different skills like loops, conditionals and flow control.
 
 ## How the Code Works Behind the Scenes
 
 ### Start
-When you run the script, the first thing you see is a "Welcome" screen, explaining the game's mechanics and potential rewards. The code is straightforward, consisting of a few print statements.
+When you run the script, the program asks you to choose the range of the numbers being randomized.
 
 ### Menu
 Next, the menu appears. I used `input()` to capture the player's choice to either start or exit. I then used `int()` to convert the input into an integer, restricting the options to 1 or 2. This choice is stored in the `menu` variable for the next step.
