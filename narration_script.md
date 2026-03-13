@@ -6,4 +6,4 @@ Once the range is set, the computer picks a random number. Now, you start guessi
 
 When you finally guess the right number, the game says "Congratulations!" and shows you the odds of your win—for example, a 1 in 10 chance. You can then go back to the menu to play again or leave.
 
-I really enjoyed making this because it uses the basics of programming: loops, variables, and math. It’s simple, but it works perfectly. Thanks for watching!
+I really enjoyed making this because it uses the basics of programming: loops, variables, and math. It’s simple, but it works perfectly. Thanks for listening!
