@@ -1,29 +1,31 @@
-# Random number guesser!
+# Random Number Guesser
 
-## About the Project
+A fun number-guessing game built to practice fundamental programming concepts like loops, conditionals, and flow control.
 
-This script is a practice of different skills like loops, conditionals and flow control.
+## Overview
 
-## How the Code Works Behind the Scenes
+This script implements a simple guessing game where players try to guess a randomly generated number within a user-defined range.
 
-### Start
-When you run the script, the program asks you to choose the range of the numbers being randomized.
+## How It Works
 
-### Randomizer
-Using the two numbers the user gave, the program determines a random number them and stores it in the memory.
+1. **User Input**: The program asks you to specify a range (minimum and maximum numbers).
 
-### Verifying Choice
-The user then can try to guess the number. If they fail, they can try again untill they get it right.
+2. **Random Generation**: A random number is generated within the specified range and stored in memory.
 
-### Rewarding display
-When the user guess the number correctly, a message will be displayed telling them the chances of guessing the correct number.
+3. **Guessing Game**: You have unlimited attempts to guess the correct number. After each guess, the program provides feedback to help you narrow down your options.
 
-### Loop
-When the user guess the number correctly, they can choose to play again or close the game.
+4. **Win Message**: When you guess correctly, the program displays a congratulatory message along with statistics about your performance (number of attempts, odds of guessing correctly, etc.).
 
+5. **Replay Option**: After winning, you can choose to play again or exit the game.
 
+## Skills Practiced
 
+- Loops (for repeating user input until correct answer)
+- Conditionals (if/else statements for comparing guesses)
+- Flow control (managing game state and user interaction)
+- Random number generation
+- User input/output handling
 
+## Getting Started
 
-
-
+Run the script and follow the on-screen prompts to start playing!
